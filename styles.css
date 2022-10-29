@@ -1,0 +1,199 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: "League Spartan", sans-serif;
+	font-size: 15px;
+}
+
+:root {
+	--color-primary-turqoise: hsl(180, 29%, 50%);
+	--color-backgound: hsl(180, 46%, 92%);
+	--color-background-filter: hsl(180, 31%, 95%);
+	--color-background-white: white;
+	--color-highlight: hsl(180, 8%, 52%);
+	--color-dark-highlight: hsl(180, 14%, 20%);
+}
+
+body {
+	background-color: var(--color-backgound);
+}
+
+header {
+	position: relative;
+	min-height: 15vh;
+	background-image: url("./images/bg-header-mobile.svg");
+	background-color: var(--color-primary-turqoise);
+}
+
+main {
+	padding: 3rem 0;
+}
+
+li {
+	list-style: none;
+}
+
+h1 {
+	margin: 1em 0;
+}
+
+h2 {
+	color: var(--color-primary-turqoise);
+}
+
+.row {
+	display: flex;
+	align-items: baseline;
+	margin: 1rem 0;
+}
+
+.filters {
+	width: 90%;
+	margin: 0 auto;
+	padding: 1.5rem 2rem;
+	background-color: var(--color-background-white);
+	border-radius: 0.5rem;
+	box-shadow: 0rem 0.75rem 1rem -1rem var(--color-primary-turqoise);
+	position: absolute;
+	top: 50%;
+	left: 5%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.filters > ul {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.filters p {
+	margin: 0 0.5rem;
+}
+
+.filters li {
+	display: flex;
+	align-items: center;
+	flex-wrap: nowrap;
+	color: var(--color-primary-turqoise);
+	background-color: var(--color-background-filter);
+	font-weight: bolder;
+	border-radius: 0.25rem;
+	margin-right: 1rem;
+	margin-bottom: 1rem;
+}
+
+.filters img {
+	background-color: var(--color-primary-turqoise);
+	padding: 1em;
+	border-radius: 0 0.25rem 0.25rem 0;
+}
+
+.filters img:hover {
+	background-color: var(--color-dark-highlight);
+	cursor: pointer;
+}
+
+.filters__clear {
+	color: var(--color-primary-turqoise);
+	align-self: center;
+	cursor: pointer;
+}
+
+.filters__clear:hover {
+	text-decoration: underline;
+}
+
+.card__title {
+	min-height: 1.8rem;
+	align-items: center;
+}
+
+.card {
+	position: relative;
+	width: 90%;
+	margin: 0 auto;
+	margin-bottom: 4rem;
+	padding: 1.5rem 2rem;
+	background-color: var(--color-background-white);
+	border-radius: 0.5rem;
+	box-shadow: 0rem 0.75rem 1rem -1rem var(--color-primary-turqoise);
+}
+
+.featured {
+	border-left: var(--color-primary-turqoise) 0.5rem solid;
+	padding-left: 1.5rem;
+}
+
+.card > img {
+	position: absolute;
+	width: 4rem;
+	left: 1.5rem;
+	top: -2rem;
+}
+
+.featured > img {
+	left: 1rem;
+}
+
+.mobile-divider {
+	margin: 0.75rem 0;
+	border-bottom: var(--color-highlight) 1px solid;
+}
+
+.tag {
+	text-transform: uppercase;
+	margin-left: 0.75em;
+	padding: 0.5em 0.75em 0.25em 0.75em;
+	border-radius: 2rem;
+	color: var(--color-background-white);
+	background-color: var(--color-primary-turqoise);
+}
+
+.background-dark {
+	background-color: var(--color-dark-highlight);
+}
+
+.card__jobData > li {
+	color: var(--color-highlight);
+}
+
+.card__jobData > li + li {
+	margin-left: 1.5em;
+	list-style: disc;
+}
+
+.card__filters {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.card__filters li {
+	color: var(--color-primary-turqoise);
+	background-color: var(--color-background-filter);
+	font-weight: bolder;
+	border-radius: 0.25rem;
+	padding: 0.5rem 1rem;
+	margin-right: 0.5rem;
+	margin-bottom: 0.5rem;
+}
+
+.card__filters > li:hover {
+	color: var(--color-background-white);
+	background-color: var(--color-primary-turqoise);
+	cursor: pointer;
+}
+
+.hidden {
+	display: none;
+}
+
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}

@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+		<link rel="stylesheet" href="./styles.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;700&display=swap"
+			rel="stylesheet"
+		/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script src="./filter.js"></script>
+
+		<title>Frontend Mentor | Job Listings</title>
+	</head>
+	<body>
+		<header>
+			<!-- Background Image + Filter Section -->
+			<div class="filters hidden">
+				<ul>
+					<li>
+						<p>JavaScript</p>
+						<img src="./images/icon-remove.svg" alt="remove filter" />
+					</li>
+					<li>
+						<p>Senior</p>
+						<img src="./images/icon-remove.svg" alt="remove filter" />
+					</li>
+					<li>
+						<p>Html</p>
+						<img src="./images/icon-remove.svg" alt="remove filter" />
+					</li>
+				</ul>
+				<div class="filters__clear">Clear</div>
+			</div>
+		</header>
+		<main>
+			<div class="card featured">
+				<!-- Item Start -->
+				<img src="./images/photosnap.svg" alt="photosnap logo" />
+				<section>
+					<div class="row card__title">
+						<h2>Photosnap</h2>
+						<h3 class="tag">New!</h3>
+						<h3 class="tag background-dark">Featured</h3>
+					</div>
+					<h1>Senior Frontend Developer</h1>
+					<ul class="row card__jobData">
+						<li>1d ago</li>
+						<li>Full Time</li>
+						<li>USA only</li>
+					</ul>
+				</section>
+				<div class="mobile-divider"></div>
+				<section>
+					<ul class="card__filters">
+						<!-- Role -->
+						<li>Frontend</li>
+						<!-- Level -->
+						<li>Senior</li>
+						<!-- Languages -->
+						<li>HTML</li>
+						<li>CSS</li>
+						<li>JavaScript</li>
+					</ul>
+					<!-- Item End -->
+				</section>
+			</div>
+
+			<div class="card featured">
+				<!-- Item Start -->
+				<img src="./images/manage.svg" alt="manage logo" />
+				<section>
+					<div class="row card__title">
+						<h2>Manage</h2>
+						<h3 class="tag">New!</h3>
+						<h3 class="tag background-dark">Featured</h3>
+					</div>
+					<h1>Fullstack Developer</h1>
+					<ul class="row card__jobData">
+						<li>1d ago</li>
+						<li>Part Time</li>
+						<li>Remote</li>
+					</ul>
+				</section>
+				<div class="mobile-divider"></div>
+				<section>
+					<ul class="card__filters">
+						<!-- Role -->
+						<li>Fullstack</li>
+						<!-- Level -->
+						<li>Midweight</li>
+						<!-- Languages -->
+						<li>Python</li>
+						<!-- Tools -->
+						<li>React</li>
+					</ul>
+				</section>
+				<!-- Item End -->
+			</div>
+
+			<!-- Item Start -->
+			<div class="card">
+				<img src="./images/account.svg" alt="account logo" />
+				<section>
+					<div class="row card__title">
+						<h2>Account</h2>
+						<h3 class="tag">New!</h3>
+					</div>
+					<h1>Junior Frontend Developer</h1>
+					<ul class="row card__jobData">
+						<li>2d ago</li>
+						<li>Part Time</li>
+						<li>USA only</li>
+					</ul>
+				</section>
+				<div class="mobile-divider"></div>
+				<section>
+					<ul class="card__filters">
+						<!-- Role -->
+						<li>Frontend</li>
+						<!-- Level -->
+						<li>Junior</li>
+						<!-- Languages -->
+						<li>JavaScript</li>
+						<!-- Tools -->
+						<li>React</li>
+						<li>Sass</li>
+					</ul>
+				</section>
+				<!-- Item End -->
+			</div>
+
+			<!-- Item Start -->
+			<div class="card">
+				<img src="./images/myhome.svg" alt="myhome logo" />
+				<section>
+					<div class="row card__title">
+						<h2>MyHome</h2>
+					</div>
+					<h1>Junior Frontend Developer</h1>
+					<ul class="row card__jobData">
+						<li>5d ago</li>
+						<li>Contract</li>
+						<li>USA only</li>
+					</ul>
+				</section>
+				<div class="mobile-divider"></div>
+				<section>
+					<ul class="card__filters">
+						<!-- Role -->
+						<li>Frontend</li>
+						<!-- Level -->
+						<li>Junior</li>
+						<!-- Languages -->
+						<li>CSS</li>
+						<li>JavaScript</li>
+						<!-- Tools -->
+					</ul>
+				</section>
+				<!-- Item End -->
+			</div>
+
+			<!-- Item Start -->
+			<div class="card">
+				<img src="./images/loop-studios.svg" alt="loop studios logo" />
+				<section>
+					<div class="row card__title">
+						<h2>Loop Studios</h2>
+					</div>
+					<h1>Software Engineer</h1>
+					<ul class="row card__jobData">
+						<li>1w ago</li>
+						<li>Full Time</li>
+						<li>Worldwide</li>
+					</ul>
+				</section>
+				<div class="mobile-divider"></div>
+				<section>
+					<ul class="card__filters">
+						<!-- Role -->
+						<li>Fullstack</li>
+						<!-- Level -->
+						<li>Midweight</li>
+						<!-- Languages -->
+						<li>JavaScript</li>
+						<li>Ruby</li>
+						<!-- Tools -->
+						<li>Sass</li>
+					</ul>
+				</section>
+				<!-- Item End -->
+			</div>
+
+			<div class="card">
+				<img src="./images/faceit.svg" alt="faceit logo" />
+				<section>
+					<div class="row card__title">
+						<h2>FaceIt</h2>
+					</div>
+					<h1>Junior Backend Developer</h1>
+					<ul class="row card__jobData">
+						<li>2w ago</li>
+						<li>Full Time</li>
+						<li>UK only</li>
+					</ul>
+				</section>
+				<div class="mobile-divider"></div>
+				<section>
+					<ul class="card__filters">
+						<!-- Role -->
+						<li>Backend</li>
+						<!-- Level -->
+						<li>Junior</li>
+						<!-- Languages -->
+						<li>Ruby</li>
+						<!-- Tools -->
+						<li>RoR</li>
+					</ul>
+				</section>
+				<!-- Item End -->
+			</div>
+
+			<div class="card">
+				<img src="./images/shortly.svg" alt="shortly logo" />
+				<section>
+					<div class="row card__title">
+						<h2>Shortly</h2>
+					</div>
+					<h1>Junior Developer</h1>
+					<ul class="row card__jobData">
+						<li>2w ago</li>
+						<li>Full Time</li>
+						<li>Worldwide</li>
+					</ul>
+				</section>
+				<div class="mobile-divider"></div>
+				<section>
+					<ul class="card__filters">
+						<!-- Role -->
+						<li>Frontend</li>
+						<!-- Level -->
+						<li>Junior</li>
+						<!-- Languages -->
+						<li>Html</li>
+						<li>JavaScript</li>
+						<!-- Tools -->
+						<li>Sass</li>
+					</ul>
+				</section>
+				<!-- Item End -->
+			</div>
+
+			<div class="card">
+				<img src="./images/insure.svg" alt="insure logo" />
+				<section>
+					<div class="row card__title">
+						<h2>Insure</h2>
+					</div>
+					<h1>Junior Frontend Developer</h1>
+					<ul class="row card__jobData">
+						<li>2w ago</li>
+						<li>Full Time</li>
+						<li>USA only</li>
+					</ul>
+				</section>
+				<div class="mobile-divider"></div>
+				<section>
+					<ul class="card__filters">
+						<!-- Role -->
+						<li>Frontend</li>
+						<!-- Level -->
+						<li>Junior</li>
+						<!-- Languages -->
+						<li>JavaScript</li>
+						<!-- Tools -->
+						<li>Vue</li>
+						<li>Sass</li>
+					</ul>
+				</section>
+				<!-- Item End -->
+			</div>
+
+			<div class="card">
+				<img src="./images/eyecam-co.svg" alt="eyecam company logo" />
+				<section>
+					<div class="row card__title">
+						<h2>Eyecam Co.</h2>
+					</div>
+					<h1>Full Stack Engineer</h1>
+					<ul class="row card__jobData">
+						<li>3w ago</li>
+						<li>Full Time</li>
+						<li>Worldwide</li>
+					</ul>
+				</section>
+				<div class="mobile-divider"></div>
+				<section>
+					<ul class="card__filters">
+						<!-- Role -->
+						<li>Fullstack</li>
+						<!-- Level -->
+						<li>Midweight</li>
+						<!-- Languages -->
+						<li>JavaScript</li>
+						<li>Python</li>
+						<!-- Tools -->
+						<li>Django</li>
+					</ul>
+				</section>
+				<!-- Item End -->
+			</div>
+
+			<!-- Item Start -->
+			<div class="card">
+				<img
+					src="./images/the-air-filter-company.svg"
+					alt="the air filter company logo"
+				/>
+				<section>
+					<div class="row card__title">
+						<h2>The Air Filter Company</h2>
+					</div>
+					<h1>Front-end Dev</h1>
+					<ul class="row card__jobData">
+						<li>1m ago</li>
+						<li>Part Time</li>
+						<li>Worldwide</li>
+					</ul>
+				</section>
+				<div class="mobile-divider"></div>
+				<section>
+					<ul class="card__filters">
+						<!-- Role -->
+						<li>Frontend</li>
+						<!-- Level -->
+						<li>Junior</li>
+						<!-- Languages -->
+						<li>JavaScript</li>
+						<!-- Tools -->
+						<li>React</li>
+						<li>Sass</li>
+					</ul>
+				</section>
+				<!-- Item End -->
+			</div>
+		</main>
+		<footer>
+			<div class="attribution">
+				Challenge by
+				<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+					>Frontend Mentor</a
+				>. Coded by <a href="#">Your Name Here</a>.
+			</div>
+		</footer>
+	</body>
+</html>
